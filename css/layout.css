@@ -1,0 +1,24 @@
+.site-header { min-height: var(--header-height); max-width: var(--content); margin: auto; padding: var(--space-4) var(--space-6); display:flex; align-items:center; justify-content:space-between; gap:var(--space-4); }
+.brand { display:flex; align-items:center; gap:var(--space-3); font-weight:850; text-decoration:none; letter-spacing:-.02em; }
+.brand-mark { display:grid; place-items:center; width:2.25rem; height:2.25rem; color:var(--green-dark); background:var(--lime); border-radius:50% 50% 50% var(--radius-sm); }
+.header-actions { display:flex; align-items:center; gap:var(--space-5); }
+#app { min-height: calc(100vh - var(--header-height)); }
+.page { max-width:var(--content); margin:auto; padding:var(--space-6); }
+.page-narrow { max-width:50rem; }
+.hero { min-height:calc(100vh - 8rem); display:grid; grid-template-columns:minmax(0,1.1fr) minmax(20rem,.9fr); gap:var(--space-8); align-items:center; }
+.hero h1 { font-size:var(--text-xl); max-width:11ch; }
+.hero-copy { max-width:var(--measure); font-size:var(--text-md); color:var(--muted); }
+.hero-panel { background:var(--green-dark); color:white; border-radius:var(--radius-xl); padding:var(--space-7); min-height:31rem; display:flex; flex-direction:column; justify-content:space-between; box-shadow:var(--shadow); }
+.hero-panel .eyebrow { color:var(--lime); }
+.stack { display:flex; flex-direction:column; gap:var(--space-4); }
+.stack-lg { gap:var(--space-6); }
+.split { display:grid; grid-template-columns:minmax(0,1.2fr) minmax(19rem,.8fr); gap:var(--space-6); align-items:start; }
+.grid-2 { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:var(--space-4); }
+.grid-3 { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:var(--space-4); }
+.metrics { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:var(--space-3); }
+.page-head { display:flex; align-items:flex-start; justify-content:space-between; gap:var(--space-5); margin-bottom:var(--space-6); }
+.page-head-copy { max-width:var(--measure); }
+.actions { display:flex; flex-wrap:wrap; gap:var(--space-3); align-items:center; }
+.actions-end { justify-content:flex-end; }
+.sticky-action { position:sticky; bottom:0; z-index:8; padding:var(--space-4) 0; background:linear-gradient(transparent,var(--paper) 18%); }
+.fallback-page { max-width:42rem; margin:15vh auto; padding:var(--space-6); }
